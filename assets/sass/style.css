@@ -768,7 +768,7 @@ Scroll Top CSS
 /* Counter section background shapes */
 
 .problem-bg-shapes {
-  position: absolute;
+  /* position: absolute; */
   top: 110px;
   left: 125px;
   width: 100%;
@@ -786,8 +786,8 @@ Scroll Top CSS
   height: 120px;
   background: linear-gradient(134deg, #00ff76 40%, #25abfe 100%);
   border-radius: 50%;
-  left: 5%;
-  top: 15%;
+  left: 6%;
+  top: 22%;
   animation: floatShape 6s ease-in-out infinite;
 }
 .problem-bg-circle-small {
@@ -795,8 +795,8 @@ Scroll Top CSS
   height: 100px;
   background: linear-gradient(317deg, #00ff00 40%, #25abfe 100%);
   border-radius: 50%;
-  right: 18%;
-  bottom: 70%;
+  right: 15%;
+  bottom: 73%;
   animation: floatShapeReverse 7s ease-in-out infinite;
 }
 /* .problem-bg-circle-small2 {
@@ -5041,12 +5041,12 @@ About Area One CSS
 }
 .about__one-image .shape-1 {
   top: -32px;
-  right: 173px;
+  right: -20px;
 }
 .about__one-image .shape-2 {
   z-index: -1;
-  right: 106px;
-  bottom: 69px;
+  right: 240px;
+  bottom: -50px;
 }
 .about__one-content h2 {
   text-transform: none;
@@ -5449,8 +5449,9 @@ Company History CSS
   position: relative;
   background: var(--white);
   box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 15px;
   transition: 0.4s;
+  /* height: 200px; */
 }
 .company-history-content-card::before {
   content: "";
@@ -5950,7 +5951,7 @@ Services Four Style
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  height: 175px;
+  height: 200px;
 }
 .services__four-single-service a {
   font-size: 28px;
@@ -6022,40 +6023,66 @@ Services Five Style
 }
 .service__five-card {
   display: flex;
+  flex-direction: column;
   border: 1px solid var(--border-color-4);
   padding: 30px 25px;
-  align-items: start;
+  align-items: center;
   gap: 20px;
-  border-radius: 10px;
-  border-bottom: 8px solid var(--border-color-4);
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px #e2e2e2;
   background-color: var(--white);
   transition: 0.4s;
+  background: linear-gradient(#00843d 0 0) left / var(--p, 0) no-repeat;
+  background-color: #0087402b;
+  backdrop-filter: blur(5px);
 }
 .service__five-card .icon {
   width: 70px;
   height: 70px;
   text-align: center;
-  line-height: 79px;
+  line-height: 60px;
   border-radius: 50%;
-  background-color: var(--color-1);
-  color: var(--primary-color-3);
+  background-color: #d4ebdf;
+  color: var(--primary-color-4);
   font-size: 30px;
   transition: 0.4s;
+  border: 2px solid black;
+}
+
+.service__five-card .content p{
+  text-align: justify;
+}
+.service__five-card .icon img{
+  /* filter: invert(1); */
 }
 .service__five-card .content {
-  width: calc(100% - 100px);
+  /* width: calc(100% - 100px); */
 }
 .service__five-card .content h5 {
   font-size: 22px;
   margin-bottom: 2;
+  text-align: center;
 }
 .service__five-card:hover {
   transform: translateY(-5px);
+  --p: 100%;
+  background-position: right;
+  /* box-shadow: 0px 0px 20px 5px rgb(80 185 72 / 40%); */
 }
 .service__five-card:hover .icon {
-  background-color: var(--primary-color-3);
+  background-color: var(--white);
   color: var(--color-1);
 }
+.service__five-card:hover{
+  color: var(--white);
+}
+.service__five-card:hover .content p {
+  color: #fff;
+}
+.service__five-card:hover .icon img{
+  filter: unset;
+}
+
 
 @media (max-width: 359px) {
   .service__five-card {
@@ -6069,6 +6096,7 @@ Services Five Style
     width: 100%;
   }
 }
+
 /*==========================================================================
 Service Details CSS
 ==========================================================================*/
@@ -10104,8 +10132,12 @@ Checkout Scss
 ==========================================================================*/
 .horizontal-scroll {
   padding: 21px 0;
-  background: var(--primary-color-1);
+  background: var(--primary-color-4);
   margin-bottom: -1px;
+  margin-left: 185px;
+  width: 75%;
+  border-radius: 15px;
+  margin-top: -119px;
 }
 .horizontal-scroll.style-two {
   background: var(--primary-color-4);
@@ -10119,7 +10151,7 @@ Checkout Scss
 .horizontal-scroll-icon {
   margin: 0 45px;
   font-size: 28px;
-  color: #037756;
+  color: #ffffff;
 }
 .horizontal-scroll-single-item {
   display: flex !important;
@@ -11451,4 +11483,8 @@ span {
 
 .mt-n1{
   margin-top: -1.4rem;
+}
+
+.mt-6{
+  margin-top: 6rem;
 }
