@@ -322,11 +322,11 @@
 		breakpoints: {
 			768: {
 				slidesPerView: 2,
-				spaceBetween: 30,
+				spaceBetween: 20,
 			},
 			1400: {
-				slidesPerView: 3,
-				spaceBetween: 30,
+				slidesPerView: 2,
+				spaceBetween: 20,
 			},
 		}
 	});
@@ -334,11 +334,17 @@
 	///=============  Testimonial Four  =============\\\
 	var swiper = new Swiper(".testimonial__four-slider-active", {
 		loop: true,
-		spaceBetween: 30,
+		spaceBetween: 15,
 		slidesPerView: 1,
 		centeredSlides: true,
 		fadeIn: true,
 		speed: 1500,
+		// autoplay:true,
+		nav: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
 		breakpoints: {
 			0: {
 				slidesPerView: 1,
@@ -347,10 +353,10 @@
 				slidesPerView: 1,
 			},
 			1025: {
-				slidesPerView: 3,
+				slidesPerView: 2,
 			},
 			1600: {
-				slidesPerView: 4,
+				slidesPerView: 3,
 			},
 		},
 	});
