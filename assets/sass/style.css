@@ -254,9 +254,11 @@ textarea {
   border-radius: 5px;
   width: 100%;
   height: 60px;
-  border: 1px solid var(--color-4);
+  border: 1px solid var(--white);
   padding: 0 15px;
-  background: var(--white);
+  background: #ffffff00;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 3px 10px #d0d0d0;
 }
 
 input[type=text]:focus,
@@ -5918,6 +5920,7 @@ Services Four Style
 .services__four {
   position: relative;
 }
+
 .services__four::before {
   content: "";
   top: 0;
@@ -5934,6 +5937,7 @@ Services Four Style
   border-radius: 50px;
   transform: translateX(-50%);
 }
+  
 .services__four .subtitle-four {
   margin: auto;
   margin-bottom: 14px;
@@ -6173,7 +6177,7 @@ Service Details CSS
   flex-wrap: wrap;
 }
 .service__details-image img {
-  width: 48%;
+  width: 100%;
   border-radius: 10px;
   height: 320px;
   -o-object-fit: cover;
@@ -8518,19 +8522,21 @@ Blog Two Style
   display: block;
   text-align: left;
 }
-.blog__two-single-blog-content .blog-btn {
+.blog__two-single-blog-content .blog-btn, .blog__four-single-blog .blog-btn {
   font-size: 14px;
   transition: 0.4s;
+  color: var(--primary-color-4);
+  font-weight: 600;
 }
-.blog__two-single-blog-content .blog-btn i {
+.blog__two-single-blog-content .blog-btn i, .blog__four-single-blog .blog-btn i{
   margin-left: 5px;
   font-size: 12px;
   transition: 0.4s;
 }
-.blog__two-single-blog-content .blog-btn:hover {
-  color: var(--primary-color-2);
+.blog__two-single-blog-content .blog-btn:hover, .blog__four-single-blog .blog-btn:hover {
+  color: var(--primary-color-4);
 }
-.blog__two-single-blog-content .blog-btn:hover i {
+.blog__two-single-blog-content .blog-btn:hover i, .blog__four-single-blog .blog-btn:hover i {
   transform: rotate(360deg);
 }
 .blog__two-single-blog:hover .blog__two-single-blog-image {
@@ -11305,7 +11311,7 @@ Footer Copyright CSS
 }
 .banner-section.style1 .banner-content h1 {
   text-align: center;
-  font-size: 85px;
+  font-size: 70px;
   font-style: normal;
   font-weight: 700;
   line-height: 94%;
