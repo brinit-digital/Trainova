@@ -4207,7 +4207,7 @@ Menu Bar CSS
   background: var(--primary-color-4);
 }
 .header__area.four .responsive__menu {
-  background-color: #0D0C24;
+  background-color: #00622d;
 }
 .header__area.four .responsive__menu_wrap i {
   background-color: var(--primary-color-4);
@@ -4221,7 +4221,7 @@ Menu Bar CSS
 /*=================== Responsive Sidebar menu ===================*/
 .responsive__menu {
   width: 320px;
-  height: 100%;
+  /* height: 100%; */
   position: fixed;
   left: -320px;
   top: 0px;
@@ -4236,6 +4236,7 @@ Menu Bar CSS
 .responsive__menu.show {
   left: 0px;
   top: 0;
+  /* display: block !important; */
 }
 .responsive__menu_wrap {
   display: flex;
@@ -4321,7 +4322,7 @@ Menu Bar CSS
 @media (max-width: 575px) {
   .responsive__menu {
     left: -100%;
-    width: 100%;
+    /* width: 100%; */
   }
 }
 @media (max-width: 991px) {
