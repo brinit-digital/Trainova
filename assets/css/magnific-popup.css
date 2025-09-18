@@ -222,7 +222,8 @@ button::-moz-focus-inner {
   .mfp-iframe-holder .mfp-content {
     line-height: 0;
     width: 100%;
-    max-width: 900px; }
+    max-width: 900px;
+    height: 48rem;}
   .mfp-iframe-holder .mfp-close {
     top: -40px; }
 
@@ -239,7 +240,8 @@ button::-moz-focus-inner {
     width: 100%;
     height: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #000; }
+    background: #000;
+    border-radius: 15px;}
 
 /* Main image in popup */
 img.mfp-img {
