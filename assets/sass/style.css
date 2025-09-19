@@ -8291,6 +8291,9 @@ Counter Two Style
 }
 
 @media (max-width: 1399px) {
+  .counter-up__two{
+    left: 55px;
+  }
   .counter-up__two-counter-wrapper .single-counter {
     display: flex;
     align-items: center;
@@ -8300,11 +8303,17 @@ Counter Two Style
   }
 }
 @media (max-width: 1199px) {
+  .counter-up__two{
+    left: 50px;
+  }
   .counter-up__two-counter-wrapper .single-counter {
     padding: 0 22px;
   }
 }
 @media (max-width: 992px) {
+  .counter-up__two {
+    left: 40px;
+  }
   .counter-up__two .counter-wrapper {
     flex-direction: column;
   }
@@ -8318,6 +8327,7 @@ Counter Two Style
 @media (max-width: 767px) {
   .counter-up__two {
     padding: 45px 0;
+    left: 30px;
   }
   .counter-up__two-counter-wrapper .single-counter {
     padding: 0;
@@ -8326,6 +8336,11 @@ Counter Two Style
   .counter-up__two-counter-wrapper {
     flex-direction: column;
     gap: 20px;
+  }
+}
+@media (max-width: 571px){
+  .counter-up__two{
+    left: 20px;
   }
 }
 /*==========================================================================
@@ -9515,6 +9530,11 @@ Pricing Plan One CSS
 }
 .pricing-plan-active:hover{
   transform: scale(1.06);
+}
+@media (max-width: 991px){
+  .pricing-plan-active{
+    transform: none;
+  }
 }
 .pricing-plan__one-single-pricing-plan {
   background: var(--white);
